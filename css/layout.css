@@ -1,15 +1,16 @@
-
+@charset "utf-8";
+/*   main Wrapper   */
 .main-wrapper {
     width:1069px;
     height:1561px;
     /*background: url(../images/pixel-perfect-bg.jpg) 0 0 no-repeat;*/
     margin:0 auto;
 }
+/*   header part   */
 .header-wrapper {
     width:1069px;
     height:450px;
     padding:0px;
-    /*opacity:0.4;*/
 }
 .header-container {
     width:1009px;
@@ -23,7 +24,6 @@
     margin-left:-3px;
     margin-bottom:36px;
 }
-
 .banner-wrapper {
     padding:17px 30px 13px 30px;
     background:#a49191;
@@ -48,6 +48,12 @@
 .banner-container ul li span {
     width:1009px;
     height:70px;
+    padding: 14px;
+    display:block;
+    position:absolute;
+    top:120px;
+    font-size:35px;
+    color:white;
     background:#f4609b;
 }
 .banner-nav-left {
@@ -64,6 +70,7 @@
     top:32px;
     left:85px;
 }
+/*  body part  */
 .body-wrapper {
     width:1069px;
     min-height:658px;
@@ -182,17 +189,6 @@
     float:left;
     background:#3d8896;
 }
-/*.content-bottom ul li:active {*/
-    /*margin: 7px 0px 0px 1px;*/
-/*}*/
-/*.content-bottom ul li a {*/
-    /*text-decoration:none;*/
-    /*line-height:44px;*/
-    /*font-size:12px;*/
-    /*text-align:center;*/
-    /*color:#ffffff;*/
-    /*display:block;*/
-/*}*/
 .content-bottom ul li ul {
     width:1009px;
     min-height:337px;
@@ -261,6 +257,7 @@
     background-position:top right;
     background-repeat:no-repeat;
 }
+/* footer part*/
 .footer {
     width:1069px;
     padding: 1px 0 0 0;

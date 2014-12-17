@@ -39,8 +39,10 @@ function setElementActive(elements,parent,activationClassName,updateSubelements)
                     console.log(c);
                     for (var j = 0; j < c.length; j++) {
                         if (c[j] == activationClassName && updateSubelements) {
-
-                            elements[i].children[0].style.display = 'none';
+                             var elementSubList = elements[i].getElementsByTagName('ul')[0];
+                            if(elementSubList) {
+                                elementSubList.style.display = 'none';
+                            }
                             console.log("foundddddd");
                             break;
                         }
@@ -79,6 +81,7 @@ function setElementActive(elements,parent,activationClassName,updateSubelements)
 //            }
 
             }
+            return false;
         })(element);
     }
 }
