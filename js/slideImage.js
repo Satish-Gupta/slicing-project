@@ -81,9 +81,9 @@ function Slider() {
     this.animateBanner = function(){
         if(that.sliderULLeftMargin % 1009 == 0) {
             that.animatePause = true;
-            console.log('pause');
+//            console.log('pause');
             setTimeout(animate,400)
-            console.log(that.sliderULLeftMargin)
+//            console.log(that.sliderULLeftMargin)
         } else {
             animate();
         }

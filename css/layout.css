@@ -111,8 +111,6 @@
     background:url(../images/buy-button-right.png) top right no-repeat;
 
 }
-
-
 .content-top {
     width:1009px;
     height:206px;    
@@ -150,8 +148,11 @@
     padding:6px;
     margin:0px;
     font-size:10px;
-    color:white;    
-    background:url(../images/bg-right-shopall.png) top right no-repeat;
+    color:white;
+    background:#3d8896;
+    background-image:url(../images/bg-right-shopall.png);
+    background-position: top right;
+    background-repeat:no-repeat;
 }
 .content-top-right {
     width:280px;
@@ -172,7 +173,7 @@
 .content-bottom ul li {
     width:193px;
     height:44px;
-    margin: 0px 0px 0px 1px;
+    margin: 0px 0px 12px 1px;
     display:inline;
     font-size:12px;
     text-align:center;
@@ -244,19 +245,21 @@
 .content-bottom ul li ul li span {
     width:61px;
     height:26px;
-    padding:0px 5px;    
+    padding:0px 5px;
     display:block;
     background:url(../images/bg-shop-all-small-left.png) top left no-repeat;
 }
-.content-bottom ul li ul li span a {    
+.content-bottom ul li ul li span a {
     width:61px;
-    line-height:25px;    
+    line-height:25px;
     padding:0px 5px;    
     font-size:11px;
     color:white;
     text-align:left;
     display:block;
-    background:url(../images/bg-shop-all-small-right.png) top right no-repeat;
+    background-image:url(../images/bg-shop-all-small-right.png);
+    background-position:top right;
+    background-repeat:no-repeat;
 }
 .footer {
     width:1069px;

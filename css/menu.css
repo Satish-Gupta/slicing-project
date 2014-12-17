@@ -29,9 +29,9 @@
     background:#5a93e9;
 }
 .menu-active {
-    padding:15px 8px;
-    margin:0px;
-    background:#5a93e9;
+    padding:15px 8px !important;
+    margin:0px !important;
+    background:#5a93e9 !important;
 }
 .menu ul li a {
     display:block;
