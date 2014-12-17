@@ -67,20 +67,71 @@
 .body-wrapper {
     width:1069px;
     min-height:658px;
+    padding: 0px 30px;
 }
+.col-2-right-layout {
+
+}
+.main-block {
+    
+}
+.right-block {
+    
+}
+.main-block {
+    width:535px;
+    height:274px;
+    padding: 44px 23px;
+	float:left;
+}
+.main-block h1 {
+    font-size:12px;
+}
+.main-block p {
+    font-size:12px;
+    padding:17px 0px 0px 0px;
+    color:#7f7f7f;
+}
+.right-block {
+	float:right;
+    width:268px;
+    padding:60px;
+}
+.buy-button-gray {
+    width:61px;
+    height:35px;
+    padding:0px 5px;   
+    display:block;
+    background:url(../images/buy-button-gray-left.png) top left no-repeat;
+
+}
+.price {
+
+}
+.buy-button-gray a {
+    text-decoration:none;
+    width:61px;
+    line-height:35px;    
+    padding:0px 5px;    
+    font-size:14px;
+    color:white;
+    text-align:center;
+    display:block;
+    background:url(../images/buy-button-right.png) top right no-repeat;
+
+}
+
+
 .content-top {
     width:1009px;
-    height:206px;
-    /*background: blue;*/
-    padding:24px 30px 0px 30px;
+    height:206px;    
+    padding:24px 0px 0px 0px;
 }
 .content-top-left {
     width:532px;
     height:172px;
-    /*padding:0px;*/
     float:left;
-    padding:0px 0px 0px 23px;
-    /*background: green;*/
+    padding:0px 0px 0px 30px;
     font-family:"Arial", Helvetica Neue, Helvetica, sans-serif;
 }
 .content-top-left h1 {
@@ -98,34 +149,28 @@
     word-spacing:2px;
 }
 .content-top-left span {
-    /*display:block;*/
-    /*height:25px;*/
     padding:6px;
     margin:0px;
     font-size:10px;
     background:url(../images/bg-left-shopall.png) top left no-repeat;
 }
 .content-top-left a {
-    text-decoration:none;
-    /*height:25px !important;*/
+    text-decoration:none;    
     padding:6px;
     margin:0px;
     font-size:10px;
-    color:white;
-    /*text-align:center;*/
-    /*padding:5px;*/
-    /*display:block;*/
+    color:white;    
     background:url(../images/bg-right-shopall.png) top right no-repeat;
 }
 .content-top-right {
     width:280px;
     height:128px;
-    padding:0px;
+    padding:0px 6px 0px 0px;
     float:right;
 }
 .content-bottom {
     width:1009px;
-    padding:0px 30px;
+    padding:0px;
 }
 .content-bottom ul {
     height:56px;
@@ -174,7 +219,7 @@
 .content-bottom ul li ul li {
     height:331px;
     width:279px;
-    padding:0px 27px 0px 0px;
+    padding:0px 56px 0px 0px;
     background:none;
 }
 .content-bottom ul li ul li img {
@@ -192,11 +237,6 @@
     text-align:left;
 }
 .content-bottom ul li ul li p {
-    /*min-height: ;*/
-    /*line-height:16px;*/
-    /*color:#7f7f7f;*/
-    /*font-size:12px;*/
-    /*padding:15px 0px 27px 0px;*/
     line-height:16px;
     color: #7f7f7f;
     font-size:13px;
@@ -209,40 +249,27 @@
     text-decoration: none;
     line-height:0px;
     display:block;
-
-    /*text-decoration:none;*/
-    /*line-height:44px;*/
-    /*font-size:12px;*/
-    /*text-align:center;*/
-    /*color:#ffffff;*/
-    /*display:block;*/
 }
 .content-bottom ul li ul li span {
     width:61px;
     height:26px;
-    padding:0px 5px;
-    /*margin:0px;*/
-    /*font-size:10px;*/
+    padding:0px 5px;    
     display:block;
     background:url(../images/bg-shop-all-small-left.png) top left no-repeat;
 }
-.content-bottom ul li ul li span a {
-    /*text-decoration:none;*/
+.content-bottom ul li ul li span a {    
     width:61px;
-    line-height:25px;
-    /*height:26px;*/
-    padding:0px 5px;
-    /*margin:0px;*/
+    line-height:25px;    
+    padding:0px 5px;    
     font-size:11px;
     color:white;
     text-align:left;
-    /*padding:5px;*/
-
     display:block;
     background:url(../images/bg-shop-all-small-right.png) top right no-repeat;
 }
 .footer {
     width:1069px;
+    padding: 1px 0px 0px 30px;
     height:373px;
     background: url(../images/footer-top-line.png) 0 0 repeat-x;
     float:none;
@@ -250,9 +277,8 @@
 .footer-top {
     width:1009px;
     height:213px;
-    margin:1px 0px 0px 0px;
     padding:38px 30px;
-    background: url(../images/footer-bg.png) 1 1 repeat;
+    background: url(../images/footer-bg.png) 1px 1px repeat;
 }
 .footer-top p {
     padding:0px 0px 20px 0px;
@@ -281,8 +307,7 @@
 .footer-top ul li h1 {
     font-size:12px;
     font-weight:normal;
-    color:#404040;
-    /*background:yellow;*/
+    color:#404040;    
 }
 .footer-top ul li p {
     line-height:15px;
