@@ -69,15 +69,6 @@
     min-height:658px;
     padding: 0px 30px;
 }
-.col-2-right-layout {
-
-}
-.main-block {
-    
-}
-.right-block {
-    
-}
 .main-block {
     width:535px;
     height:274px;
@@ -269,15 +260,15 @@
 }
 .footer {
     width:1069px;
-    padding: 1px 0px 0px 30px;
+    padding: 1px 0 0 0;
     height:373px;
     background: url(../images/footer-top-line.png) 0 0 repeat-x;
     float:none;
 }
 .footer-top {
-    width:1009px;
+    width:979px;
     height:213px;
-    padding:38px 30px;
+    padding:38px 30px 38px 60px;
     background: url(../images/footer-bg.png) 1px 1px repeat;
 }
 .footer-top p {
@@ -294,7 +285,7 @@
 .footer-top ul li {
     width:179px;
     height:132px;
-    padding: 0px 0px 0px 41px;
+    padding: 0px 0px 0px 40px;
     margin: 22px 0px 22px 25px;
     float:left;
     position:relative;
@@ -324,7 +315,7 @@
 }
 .footer-mid {
     height:20px;
-    padding: 6px 30px;
+    padding: 6px 30px 6px 60px;
 }
 .footer-mid ul {
     list-style:none;
@@ -347,7 +338,7 @@
 }
 .footer-bottom {
     height:46px;
-    padding:19px 30px 12px 30px;
+    padding:19px 30px 12px 69px;
     clear:both;
     background:url(../images/bg-footer-bottom.png) 0 0 repeat-x;
 }
@@ -356,7 +347,7 @@
 
 }
 .footer-bottom ul li {
-    padding:0px 11px;
+    padding:0px 12px;
     display:inline;
     float:left;
     background:url(../images/footer-vertical-dotted-line.png) 0 0 no-repeat;
@@ -379,11 +370,12 @@
     float:right;
 }
 .language-selection-block {
-    width:131px;
+    width:134px;
     height:14px;
     padding: 0px 12px 0px 0px;
+    margin: 0px 20px 0px 0px;
     float:left;
-    background:url(../images/bg-language-slection.png) 123px 3px no-repeat ;
+    background:url(../images/bg-language-slection.png) 134px 3px no-repeat ;
 }
 .language-selection-block form {
     display:none;

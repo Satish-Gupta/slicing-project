@@ -23,12 +23,12 @@
     background:#a49191;
     position:relative;
 }
-.menu ul li:active {
+.menu ul li:hover {
     padding:15px 8px;
     margin:0px;
     background:#5a93e9;
 }
-.menu ul li:hover {
+.menu-active {
     padding:15px 8px;
     margin:0px;
     background:#5a93e9;
@@ -44,9 +44,11 @@
 }
 .menu ul li ul {
     display:none;
-    width:186px;
+    min-width:186px;
+    height:auto;
     padding:16px 0px 11px 0px;
-    margin:0px 2px;
+    margin:9px 0px;
+    left:0px;
     position:absolute;
     background:#594e4e;
 }
@@ -56,16 +58,17 @@
 }
 .menu ul li ul li {
     height:28px;
+    width:auto;
     padding:0px;
     margin:0px 0px 2px 0px;
+    white-space:nowrap;
     display:block;
     float:none;
     background:#5a93e9;
 }
-.menu ul li ul li:active {
+.menu ul li ul li:hover {
     padding:0px 0px;
-    margin:0px;
-    background:none;
+    margin:0px 0px 2px 0px;
 }
 .menu ul li ul li a{
     padding:0px;
