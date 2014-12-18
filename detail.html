@@ -19,17 +19,17 @@
             </div>
             <div class="menu-wrapper">
                 <div class="menu">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Our Products</a></li>
-                        <li><a href="">Our Clients</a>
+                    <ul class="menu-list">
+                        <li class="menu-active"><a href="#">Home</a></li>
+                        <li><a href="#">Our Products</a></li>
+                        <li><a href="#">Our Clients</a>
                             <ul>
-                                <li><a href="">Decore</a></li>
-                                <li><a href="">Omega</a></li>
-                                <li><a href="">Kalanga</a></li>
+                                <li><a href="#">Decore</a></li>
+                                <li><a href="#">Omega</a></li>
+                                <li><a href="#">Kalanga</a></li>
                             </ul>
                         </li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
                 <div class="search-block">
@@ -72,13 +72,17 @@
             </div>
             <div class="right-block">
                 <img src="images/glass-image1.jpg" alt="glass image" />
-                <img src="images/zoom-button.png" alt="show-large-image" />
+                <img class="light-box-button" id="light-box-button" src="images/zoom-button.png" alt="show-large-image" />
                 <div class="">
-                    <span class="price">58.00</span>
+                    <span class="price">58.00 USD</span>
                     <span class="buy-button-gray">
                         <a href="#">Buy</a>
                     </span>
                 </div>
+            </div>
+        </div>
+        <div class="light-box" id="light-box"><img id="light-box-image" class="light-box-image" src="images/glass1-big.jpg" alt="women's sunglass"/>
+            <div class="light-box-close-button" id="button-cancel"><img src="images/light-box-close-button.png" alt="light box cancel button"/>
             </div>
         </div>
     </div>
@@ -138,5 +142,6 @@
 <script type="text/javascript" src="js/slideImage.js"></script>
 <script type="text/javascript" src="js/class-manipulation.js"></script>
 <script type="text/javascript" src="js/setElementActive.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
 </body>
 </html>

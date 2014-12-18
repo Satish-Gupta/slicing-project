@@ -12,28 +12,17 @@ function Slider() {
     var that = this;
     var animatePause = false;
     this.intervalId;
-    this.init = function() {
+    this.init = function(sliderBlock,sliderUL,prevButton,nextButton,width) {
 
-        that.sliderBlock = document.getElementById('banner-container');
-        that.sliderUL = document.getElementById('banner-list');
-    //    this.bannerListElements = this.sliderULElement.getElementsByTagName('li');
+        that.sliderBlock = sliderBlock;
+        that.sliderUL = sliderUL
         that.bannerWidth = this.sliderUL.style.width;
         that.bannerHeight = this.sliderUL.style.height;
         that.sliderULLeftMargin = 0;
         that.sliderULChilrens = that.sliderUL.children;
 
-        that.prevButton = document.getElementsByClassName('banner-nav-left');
-        that.nextButton = document.getElementsByClassName('banner-nav-right');
-//        that.prevButton = document.createElement('img');
-//        that.nextButton = document.createElement('img');
-//        that.prevButton.setAttribute("class","banner-navigation-left");
-//        that.prevButton.setAttribute("id","banner-navigation-left");
-//        that.nextButton.setAttribute("class","banner-navigation-right");
-//        that.nextButton.setAttribute("id","banner-navigation-right");
-        console.log(that.nextButton);
-        console.log(that.prevButton);
-//        that.prevButtonImg = 'banner-navigation-left.png';
-//        that.nextButtonImg = 'banner-navigation-right.png';
+        that.prevButton = prevButton;
+        that.nextButton = nextButton;
         that.prevButton.onclick = function() {
             console.log(that.sliderULChilrens.length-1);
             console.log('insside prev button onclick');
@@ -49,27 +38,12 @@ function Slider() {
             }
         }
 
-        that.intervalId = setInterval(that.animateBanner,30);
-//        that.putButtons();
+        that.intervalId = setInterval(that.animateBanner,20);
     };
-
-//    this.putButtons = function() {
-//        console.log(that.bannerHeight)
-//        that.prevButton.setAttribute('src',"images/"+that.prevButtonImg);
-//        that.prevButton.style.top = 200 + "px";
-//        that.prevButton.style.left = "10px";
-//        that.nextButton.setAttribute('src',"images/"+that.nextButtonImg);
-//        that.nextButton.style.width = 11 + "px";
-//        that.nextButton.style.height = 11 + "px";
-//        that.nextButton.style.top = 200 + 'px';
-//        that.nextButton.style.left = "880px";
-//        that.sliderBlock.appendChild(that.prevButton);
-//        that.sliderBlock.appendChild(that.nextButton);
-//    }
 
     this.slideLeft = function() {
         that.sliderULLeftMargin = -Math.floor(Math.abs(that.sliderULLeftMargin) / 1009) * 1009;
-        that.sliderUL.style.marginLeft = that.sliderULLeftMargin + "px";
+            that.sliderUL.style.marginLeft = that.sliderULLeftMargin + "px";
     }
 
     this.slideRight = function() {
@@ -94,7 +68,7 @@ function Slider() {
         }
         function animate() {
                 if (that.sliderULLeftMargin > -1009) {
-                    that.sliderULLeftMargin -= 5;
+                    that.sliderULLeftMargin -= 10;
                     that.sliderUL.style.marginLeft = that.sliderULLeftMargin + "px";
                 }
         }
@@ -107,6 +81,8 @@ var nextButton = document.getElementsByClassName('banner-nav-right');
 //prevButton.onclick = function() {
 //    console.log('djfld');
 //}
+var sliderBlock = document.getElementById('banner-container');
+var sliderUL = document.getElementById('banner-list');
 var s = new Slider();
-s.init();
+s.init(sliderBlock, sliderUL,prevButton,nextButton,1009);
 
