@@ -45,6 +45,10 @@
     display:inline;
     float:left;
 }
+.banner-container ul li img {
+    width:1009px;
+    height:190px;
+}
 .banner-container ul li span {
     width:1009px;
     height:70px;
@@ -390,7 +394,7 @@
     padding: 0px 12px 0px 0px;
     margin: 0px 20px 0px 0px;
     float:left;
-    background:url(../images/bg-language-slection.png) 134px 3px no-repeat ;
+    background:url(../images/bg-language-selection.png) 134px 3px no-repeat ;
 }
 .language-selection-block form {
     display:none;
@@ -404,6 +408,10 @@
     display:block;
     clear:both;
     font-size:12px;
+    background:none;
+}
+.language-selection-block ul li a {
+    display:inline;
 }
 .language-selection-block ul li img {
     padding: 0px 10px 0px 0px;

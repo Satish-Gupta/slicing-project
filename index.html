@@ -42,11 +42,12 @@
             <div class="banner-container">
                 <ul id="banner-list">
                     <li><img src="images/banner-image1.jpg" alt="image"/><span>Starting 200$</span></li>
-                    <li><img src="images/banner-image1.jpg" alt="image"/></li>
+                    <li><img src="images/banner-image2.jpg" alt="image"/><span>Starting 200$</span></li>
+                    <li><img src="images/banner-image3.jpg" alt="image"/><span>Starting 200$</span></li>
                 </ul>
-                <a href="#"><img class="banner-nav-left" src="images/banner-navigation-left.png"
+                <a href="#"><img class="banner-nav-left" id="banner-nav-left" src="images/banner-navigation-left.png"
                                  alt="left navigation for banner"/></a>
-                <a href="#"><img class="banner-nav-right" src="images/banner-navigation-right.png"
+                <a href="#"><img class="banner-nav-right" id="banner-nav-right" src="images/banner-navigation-right.png"
                                  alt="right navigation for banner"/></a>
             </div>
         </div>
@@ -131,18 +132,18 @@
         <div class="footer-bottom">
             <div class="language-selection-block">
                 <form action="#">
-                    <select>
-                        <option>Usa</option>
-                        <option>Nepal</option>
-                        <option>India</option>
-                        <option>Bhutan</option>
+                    <select id="language-select">
+                        <option value="Usa">Usa</option>
+                        <option value="Nepal" >Nepal</option>
+                        <option value="India">India</option>
+                        <option value="Bhutan">Bhutan</option>
                     </select>
                 </form>
-                <ul>
-                    <li><a href="#"><img src="images/usa-flag.png" alt="usa-flag"/><span>Change Country</span></a></li>
-                    <li><img src="images/usa-flag.png" alt=""/></li>
-                    <li><img src="images/usa-flag.png" alt="usa"/></li>
-                    <li><img src="images/usa-flag.png" alt="usa"/></li>
+                <ul class="language-list">
+                    <li id="shown-option"><a href="#"><img src="images/usa-flag.png" alt="usa-flag"/></a><span><a href="#">Change Country</a></span></li>
+                    <li><a href="#"><img src="images/usa-flag.png" alt="usa-flag"/></a><span><a href="#">Usa</a></span></li>
+                    <li><a href="#"><img src="images/nepal-flag.png" alt="nepal-flag"/></a><span><a href="#">Nepal</a></span></li>
+                    <li><a href="#"><img src="" alt="india-flag"/></a><span><a href="#">India</a></span></li>
                 </ul>
             </div>
             <ul>
@@ -165,5 +166,6 @@
 <script type="text/javascript" src="js/slideImage.js"></script>
 <script type="text/javascript" src="js/class-manipulation.js"></script>
 <script type="text/javascript" src="js/setElementActive.js"></script>
+<script type="text/javascript" src="js/language-selection.js"></script>
 </body>
 </html>
